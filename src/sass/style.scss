@@ -1,0 +1,37 @@
+@import "fonts";
+@import "spriteall";
+@import "spritemob";
+$monbold: "Montserrat-Bold", sans-serif;
+$monreg: "Montserrat-Regular", sans-serif;
+$robot: "Roboto Light V1", sans-serif;
+$tablet-width: 768px;
+$desktop-width: 1024px;
+@mixin tablet {
+   @media(min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}){
+    @content;
+  }
+}
+@mixin desktop {
+   @media(min-width: #{$desktop-width}){
+    @content;
+  }
+}
+
+span {
+  font-family: $robot;
+}
+
+.test {
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  @include sprite($bh2);
+  @include tablet {
+    background: red;
+    border-radius: 0;
+  }
+  @include desktop {
+     @include sprite($bh1);
+    border-radius: 25%;
+  }
+}
