@@ -22,33 +22,332 @@
   font-weight: normal;
 }
 
-span {
-  font-family: "Roboto Light V1", sans-serif;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-.test {
+.content {
+  width: 300px;
+  margin: auto;
+}
+
+.promo {
+  background-image: url("../img/spritemob.jpg");
+  background-position: 0px 0px;
+  width: 320px;
+  height: 540px;
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #fff;
+  margin: auto;
+  width: 320px;
+}
+
+.promo .header {
+  padding: 20px 0 0 73px;
+}
+
+.promo .header__link {
+  display: inline-block;
+  color: #fff;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.promo .header__sign {
+  padding: 7px 17px 7px 15px;
+  border: 2px solid #fff;
+  border-radius: 30px;
+  margin-left: 15px;
+}
+
+.promo__text {
+  display: block;
+  margin: auto;
+}
+
+.promo__text_head {
+  width: 177px;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 115px;
+  letter-spacing: 0.7px;
+}
+
+.promo__text_title {
+  font-size: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 27px;
+}
+
+.promo__text_par {
+  font-size: 18px;
+  font-family: "Roboto Light V1", sans-serif;
+  text-align: center;
+  margin-top: 8px;
+  width: 217px;
+}
+
+.promo-btn {
+  display: block;
+  height: 40px;
+  width: 280px;
+  border-radius: 20px;
+  margin: 14px auto;
+  border: none;
+  background: #ff4e50;
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #fff;
+  outline: none;
+  cursor: pointer;
+}
+
+.title {
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #333;
+  font-size: 22px;
+  width: 290px;
+  text-align: center;
+  margin: auto;
+  display: block;
+}
+
+.step {
+  margin-top: 34px;
+}
+
+.step_one {
+  background-image: url("../img/spritemob.jpg");
+  background-position: -320px 0px;
+  width: 301px;
+  height: 240px;
+  margin: 14px 0 0;
+}
+
+.step_two {
+  background-image: url("../img/spritemob.jpg");
+  background-position: -320px -240px;
+  width: 300px;
+  height: 240px;
+  margin: 10px 0 0;
+}
+
+.step_three {
+  background-image: url("../img/spritemob.jpg");
+  background-position: -621px 0px;
+  width: 300px;
+  height: 240px;
+  margin: 10px 0 0;
+}
+
+.step .steps {
+  border-radius: 4px;
+  overflow: auto;
+}
+
+.step .steps__item {
+  display: block;
+  background: #ff4e50;
+  width: 70px;
+  border-radius: 10px;
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Montserrat-Regular", sans-serif;
+  font-size: 10px;
+  margin: 69px 0 0 21px;
+  padding: 4px 0 3px;
+  letter-spacing: 1.5px;
+}
+
+.step .steps__item_two {
+  margin: 99px 0 0 20px;
+}
+
+.step .steps__title {
+  color: #fff;
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 24px;
+  margin: 15px 0 0 19px;
+}
+
+.step .steps__title_two {
+  margin: 15px 0 0 18px;
+}
+
+.step .steps__text {
+  color: #ccc;
+  font-family: "Roboto Light V1", sans-serif;
+  font-size: 14px;
+  display: block;
+  width: 260px;
+  margin: 12px 0 0 19px;
+}
+
+.step .steps__text_two {
+  margin: 12px 0 0 19px;
+  word-spacing: 0.5px;
+  line-height: 16px;
+}
+
+.partners {
+  margin: 34px 0 0;
+}
+
+.partners__title {
+  margin: 1px;
+}
+
+.partners .partner {
+  margin: 12px auto;
+}
+
+.partners .partner_two {
+  margin-top: 24px;
+}
+
+.partners .partner_three {
+  margin-top: 23px;
+}
+
+.partners .partner_four {
+  margin-top: 23px;
+}
+
+.partners .partner__photo {
+  background-image: url("../img/spriteall.png");
+  background-position: -123px -126px;
+  width: 122px;
+  height: 122px;
   border-radius: 50%;
-  height: 100px;
-  width: 100px;
+  margin: auto;
+  position: relative;
+}
+
+.partners .partner__photo_two {
+  background-image: url("../img/spriteall.png");
+  background-position: -126px 0px;
+  width: 124px;
+  height: 124px;
+}
+
+.partners .partner__photo_three {
+  background-image: url("../img/spriteall.png");
+  background-position: 0px -126px;
+  width: 123px;
+  height: 123px;
+  margin: 0 87px;
+}
+
+.partners .partner__photo_four {
   background-image: url("../img/spriteall.png");
   background-position: 0px 0px;
   width: 126px;
   height: 126px;
+  margin: 0 85px;
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  .test {
-    background: red;
-    border-radius: 0;
-  }
+.partners .partner__icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ff4e50;
+  position: absolute;
+  top: 70%;
+  right: -3.5%;
+  border: 5px solid #ffffff;
+  box-sizing: border-box;
 }
 
-@media (min-width: 1024px) {
-  .test {
-    background-image: url("../img/spriteall.png");
-    background-position: -123px -126px;
-    width: 122px;
-    height: 122px;
-    border-radius: 25%;
-  }
+.partners .partner__icon_two {
+  background: #ffa507;
+}
+
+.partners .partner__icon_three {
+  background: #1cd7ad;
+}
+
+.partners .partner__icon_four {
+  background: #4e73db;
+}
+
+.partners .partner__img {
+  background-image: url("../img/spriteall.png");
+  background-position: -267px -24px;
+  width: 17px;
+  height: 17px;
+  position: absolute;
+  top: 22%;
+  left: 20%;
+}
+
+.partners .partner__img_two {
+  background-image: url("../img/spriteall.png");
+  background-position: -301px -24px;
+  width: 13px;
+  height: 16px;
+  left: 26%;
+}
+
+.partners .partner__img_three {
+  background-image: url("../img/spriteall.png");
+  background-position: -250px -24px;
+  width: 17px;
+  height: 17px;
+  top: 20%;
+  left: 19%;
+}
+
+.partners .partner__img_four {
+  background-image: url("../img/spriteall.png");
+  background-position: -284px -24px;
+  width: 17px;
+  height: 16px;
+  left: 10%;
+}
+
+.partners .partner__name {
+  font-size: 14px;
+  font-family: "Montserrat-Bold", sans-serif;
+  color: #333;
+  display: block;
+  text-align: center;
+  margin-top: 17px;
+}
+
+.partners .partner__name_three {
+  margin-top: 16px;
+  margin-left: -7px;
+}
+
+.partners .partner__name_four {
+  margin-top: 14px;
+  margin-left: -7px;
+}
+
+.partners .partner__text {
+  font-size: 14px;
+  font-family: "Roboto Light V1", sans-serif;
+  color: #666;
+  margin-top: 13px;
+  display: block;
+  text-align: center;
+  width: 195px;
+  margin: 13px auto;
+}
+
+.partners .partner__text_two {
+  width: 219px;
+}
+
+.partners .partner__text_three {
+  width: 220px;
+  margin: 14px 44px 0 36px;
+}
+
+.partners .partner__text_four {
+  margin: 14px 44px 0 36px;
+  width: 220px;
 }

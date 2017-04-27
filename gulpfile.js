@@ -30,23 +30,23 @@ gulp.task('sprite', function() {
         gulp.src('src/img/sprites/*.+(png|jpg)') // путь, откуда берем картинки для спрайта
             .pipe(spritesmith({
                 imgName: 'spriteall.png',
-                cssName: 'spriteall.css',
+                cssName: 'spriteall.scss',
                 imgPath: '../img/spriteall.png',
             }));
 
     spriteAll.img.pipe(gulp.dest('src/img')); // путь, куда сохраняем картинку
-    spriteAll.css.pipe(gulp.dest('src/css')); // путь, куда сохраняем стили
+    spriteAll.css.pipe(gulp.dest('src/sass')); // путь, куда сохраняем стили
     spriteAll.pipe(reload({stream: true}));
     var spriteMob =
     gulp.src('src/img/mobsprites/*.jpg') // путь, откуда берем картинки для спрайта
         .pipe(spritesmith({
             imgName: 'spritemob.jpg',
-            cssName: 'spritemob.css',
+            cssName: 'spritemob.scss',
             imgPath: '../img/spritemob.jpg',
         }));
 
     spriteMob.img.pipe(gulp.dest('src/img')); // путь, куда сохраняем картинку
-    spriteMob.css.pipe(gulp.dest('src/css')); // путь, куда сохраняем стили
+    spriteMob.css.pipe(gulp.dest('src/sass')); // путь, куда сохраняем стили
     spriteMob.pipe(reload({stream: true}));
 });
 
@@ -75,7 +75,7 @@ gulp.task('browser-sync', function() {
 });
 
 
-gulp.task('watch',['browser-sync','sass','processingcss','sprite','imagemin'], function() {
+gulp.task('watch',['sass','processingcss','sprite','imagemin'], function() {
   gulp.watch('src/sass/*.scss', ['sass']);
   gulp.watch('src/css/*css', ['processingcss']);
   gulp.watch('src/img/sprites/*.+(png|jpg)', ['sprite']);
