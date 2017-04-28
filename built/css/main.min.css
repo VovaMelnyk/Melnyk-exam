@@ -104,6 +104,17 @@
   cursor: pointer;
 }
 
+.promo-btn_partners {
+  margin: 25px 8px;
+  background: #fff;
+  color: #ff4e50;
+  border: 2px solid #ff4e50;
+}
+
+.promo-btn_search {
+  margin: 10px 0 0 8px;
+}
+
 .title {
   font-family: "Montserrat-Bold", sans-serif;
   color: #333;
@@ -350,4 +361,88 @@
 .partners .partner__text_four {
   margin: 14px 44px 0 36px;
   width: 220px;
+}
+
+.ideas {
+  margin-top: 34px;
+  height: 967px;
+  background: #000;
+}
+
+.search {
+  padding: 35px 0 40px;
+  border-bottom: 4px solid #ff4e50;
+}
+
+.search__text {
+  font-size: 18px;
+  font-family: "Roboto Light V1", sans-serif;
+  color: #333;
+  padding: 10px;
+}
+
+.search__field {
+  width: 87%;
+  height: 38px;
+  padding-left: 17px;
+  margin: 5px 0 0 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: "Roboto Light V1", sans-serif;
+  color: #999;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 16px;
+  font-family: "Montserrat-Bold", sans-serif;
+}
+
+.footer__head {
+  color: #ff4e50;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  text-align: center;
+  margin: 0 3px 0 0;
+}
+
+.footer__text {
+  color: #333;
+  font-size: 14px;
+  text-align: center;
+  margin: 11px 3px 0 0;
+}
+
+.footer__nav {
+  display: block;
+  margin: 1px 0 0 41px;
+  width: 224px;
+}
+
+.footer__items {
+  color: #666;
+  font-family: "Roboto Light V1", sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.footer__design {
+  font-family: "Montserrat-Bold", sans-serif;
+  font-size: 10px;
+  color: #ccc;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 13px;
+  letter-spacing: 1px;
+}
+
+.footer__logo {
+  display: block;
+  background-image: url("../img/spriteall.png");
+  background-position: -250px 0px;
+  width: 110px;
+  height: 24px;
+  margin: 8px auto;
 }
