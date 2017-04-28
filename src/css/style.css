@@ -27,24 +27,21 @@
   padding: 0;
 }
 
-.content {
-  width: 300px;
-  margin: auto;
-}
-
 .promo {
-  background-image: url(../img/spritemob.jpg);
-  background-position: 0px 0px;
-  width: 320px;
-  height: 540px;
   font-family: "Montserrat-Bold", sans-serif;
   color: #fff;
+  height: 540px;
   margin: auto;
-  width: 320px;
+  background: url("../img/promo.jpg") no-repeat;
+  background-position: calc(50% - 12px) -10px;
+  background-size: auto 102.5%;
 }
 
 .promo .header {
-  padding: 20px 0 0 73px;
+  padding: 20px 0 0;
+  width: 154px;
+  display: block;
+  margin: auto;
 }
 
 .promo .header__link {
@@ -62,32 +59,27 @@
   margin-left: 15px;
 }
 
-.promo__text {
-  display: block;
-  margin: auto;
-}
-
-.promo__text_head {
-  width: 177px;
+.promo__head {
   font-size: 20px;
   text-transform: uppercase;
   margin-top: 115px;
   letter-spacing: 0.7px;
+  text-align: center;
 }
 
-.promo__text_title {
-  font-size: 30px;
+.promo__title {
   text-transform: uppercase;
+  font-size: 30px;
   text-align: center;
   margin-top: 27px;
 }
 
-.promo__text_par {
+.promo__par {
   font-size: 18px;
   font-family: "Roboto Light V1", sans-serif;
   text-align: center;
   margin-top: 8px;
-  width: 217px;
+  padding: 0 45px 0 43px;
 }
 
 .promo-btn {
@@ -105,57 +97,32 @@
 }
 
 .promo-btn_partners {
-  margin: 25px 8px;
+  margin: 24px auto 0;
   background: #fff;
   color: #ff4e50;
   border: 2px solid #ff4e50;
 }
 
 .promo-btn_search {
-  margin: 10px 0 0 8px;
+  margin: 10px auto 0;
 }
 
 .title {
   font-family: "Montserrat-Bold", sans-serif;
   color: #333;
   font-size: 22px;
-  width: 290px;
   text-align: center;
-  margin: auto;
-  display: block;
 }
 
 .step {
   margin-top: 34px;
 }
 
-.step_one {
-  background-image: url(../img/spritemob.jpg);
-  background-position: -320px 0px;
-  width: 301px;
-  height: 240px;
-  margin: 14px 0 0;
-}
-
-.step_two {
-  background-image: url(../img/spritemob.jpg);
-  background-position: -320px -240px;
-  width: 300px;
-  height: 240px;
-  margin: 10px 0 0;
-}
-
-.step_three {
-  background-image: url(../img/spritemob.jpg);
-  background-position: -621px 0px;
-  width: 300px;
-  height: 240px;
-  margin: 10px 0 0;
-}
-
 .step .steps {
   border-radius: 4px;
   overflow: auto;
+  height: 240px;
+  width: 300px;
 }
 
 .step .steps__item {
@@ -203,12 +170,27 @@
   line-height: 16px;
 }
 
+.step_one {
+  background: url("../img/step1.m.jpg") no-repeat;
+  margin: 14px auto 0;
+}
+
+.step_two {
+  background: url("../img/step2.m.jpg") no-repeat;
+  margin: 10px auto 0;
+}
+
+.step_three {
+  background: url("../img/step3.m.jpg") no-repeat;
+  margin: 10px auto 0;
+}
+
 .partners {
   margin: 34px 0 0;
 }
 
 .partners__title {
-  margin: 1px;
+  padding: 0 7px 0 0;
 }
 
 .partners .partner {
@@ -249,7 +231,6 @@
   background-position: 0px -126px;
   width: 123px;
   height: 123px;
-  margin: 0 87px;
 }
 
 .partners .partner__photo_four {
@@ -257,7 +238,6 @@
   background-position: 0px 0px;
   width: 126px;
   height: 126px;
-  margin: 0 85px;
 }
 
 .partners .partner__icon {
@@ -343,24 +323,22 @@
   font-family: "Roboto Light V1", sans-serif;
   color: #666;
   margin-top: 13px;
-  display: block;
   text-align: center;
-  width: 195px;
-  margin: 13px auto;
+  padding: 1px 63px 0;
 }
 
 .partners .partner__text_two {
-  width: 219px;
+  padding: 0px 52px 0;
 }
 
 .partners .partner__text_three {
-  width: 220px;
-  margin: 14px 44px 0 36px;
+  margin-top: 14px;
+  padding: 0 54px 0 46px;
 }
 
 .partners .partner__text_four {
-  margin: 14px 44px 0 36px;
-  width: 220px;
+  padding: 0px 53px 0 45px;
+  margin-top: 14px;
 }
 
 .ideas {
@@ -378,19 +356,22 @@
   font-size: 18px;
   font-family: "Roboto Light V1", sans-serif;
   color: #333;
-  padding: 10px;
+  display: block;
+  margin: 11px auto;
+  width: 280px;
 }
 
 .search__field {
-  width: 87%;
   height: 38px;
-  padding-left: 17px;
-  margin: 5px 0 0 8px;
+  padding-left: 14px;
+  margin: 14px auto 0;
   border: 1px solid #ccc;
   border-radius: 4px;
   font-family: "Roboto Light V1", sans-serif;
   color: #999;
   font-size: 14px;
+  width: 83%;
+  display: block;
 }
 
 .footer {
@@ -415,8 +396,7 @@
 
 .footer__nav {
   display: block;
-  margin: 1px 0 0 41px;
-  width: 224px;
+  margin: 1px 0 0 16%;
 }
 
 .footer__items {

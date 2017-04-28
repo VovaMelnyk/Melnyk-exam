@@ -37,18 +37,7 @@ gulp.task('sprite', function() {
     spriteAll.img.pipe(gulp.dest('src/img')); // путь, куда сохраняем картинку
     spriteAll.css.pipe(gulp.dest('src/sass')); // путь, куда сохраняем стили
     spriteAll.pipe(reload({stream: true}));
-    var spriteMob =
-    gulp.src('src/img/mobsprites/*.jpg') // путь, откуда берем картинки для спрайта
-        .pipe(spritesmith({
-            imgName: 'spritemob.jpg',
-            cssName: 'spritemob.scss',
-            imgPath: '../img/spritemob.jpg',
-        }));
-
-    spriteMob.img.pipe(gulp.dest('src/img')); // путь, куда сохраняем картинку
-    spriteMob.css.pipe(gulp.dest('src/sass')); // путь, куда сохраняем стили
-    spriteMob.pipe(reload({stream: true}));
-});
+  });
 
     gulp.task('imagemin', function() {
     gulp.src('src/img/*.+(png|jpg)')
