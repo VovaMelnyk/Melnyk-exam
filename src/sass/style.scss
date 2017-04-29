@@ -126,10 +126,19 @@ $desktop-width: 1024px;
     background: $text;
     color: $buttons;
     border: 2px solid $buttons;
+    @include tablet {
+      margin: 35px 37% 0;
+      width: 196px;
+    }
   }
 
   &_search {
     margin: 10px auto 0;
+    @include tablet {
+      display: inline-block;
+      width: 160px;
+      margin: 37px 0 0 6px;
+    };
   }
 }
 
@@ -140,7 +149,7 @@ $desktop-width: 1024px;
   text-align: center;
   @include tablet {
     width: 38%;
-    margin: 0 31.3%;
+    padding: 0 31.3%;
   }
 }
 
@@ -155,6 +164,12 @@ $desktop-width: 1024px;
     overflow: auto;
     height: 240px;
     width: 300px;
+    @include tablet {
+      height: 400px;
+      width: 236px;
+      display: inline-block;
+      margin-top: 33px;
+    }
 
     &__item {
       display: block;
@@ -169,9 +184,21 @@ $desktop-width: 1024px;
       margin: 69px 0 0 21px;
       padding: 4px 0 3px;
       letter-spacing: 1.5px;
+      @include tablet {
+        margin: 213px 0 0 20px;
+      }
 
       &_two {
         margin: 99px 0 0 20px;
+        @include tablet {
+          margin: 259px 0 0 19px;
+        }
+      }
+
+      &_three {
+        @include tablet {
+          margin: 211px 0 0 21px;
+        }
       }
     }
 
@@ -191,13 +218,17 @@ $desktop-width: 1024px;
       font-family: $robot;
       font-size: 14px;
       display: block;
-      width: 260px;
-      margin: 12px 0 0 19px;
+      padding: 13px 6px 0 19px;
+      @include tablet {
+        padding: 12px 6px 0 18px;
+      }
 
       &_two {
-        margin: 12px 0 0 19px;
         word-spacing: 0.5px;
         line-height: 16px;
+        @include tablet {
+          padding: 12px 10px 0 18px;
+        }
       }
     }
   }
@@ -205,16 +236,28 @@ $desktop-width: 1024px;
   &_one {
     background: url("../img/step1.m.jpg")no-repeat;
     margin: 14px auto 0;
+    @include tablet {
+      background: url("../img/step1.jpg") calc(50% - 6px) 1px no-repeat;
+      margin: 9px;
+    }
   }
 
   &_two {
     background: url("../img/step2.m.jpg")no-repeat;
     margin: 10px auto 0;
+    @include tablet {
+      background: url("../img/step2.jpg") calc(50% + 4px) no-repeat;
+      margin: 8px;
+    }
   }
 
   &_three {
     background: url("../img/step3.m.jpg")no-repeat;
     margin: 10px auto 0;
+    @include tablet {
+      background: url("../img/step3.jpg") calc(50% - -5px) -1px no-repeat;
+      margin: 7px;
+    }
   }
 }
 
@@ -223,10 +266,32 @@ $desktop-width: 1024px;
 
   &__title {
     padding: 0 7px 0 0;
+    @include tablet {
+      width: 53%;
+      padding: 50px 23% 0;
+    }
+  }
+
+  .part1 {
+    @include tablet {
+      display: inline-block;
+      width: 49%;
+    }
+  }
+
+  .part2 {
+    @include tablet {
+      display: inline-block;
+      width: 49%;
+      vertical-align: top;
+    }
   }
 
   .partner {
     margin: 12px auto;
+    @include tablet {
+      margin: 31px 0 0;
+    }
 
     &_two {
       margin-top: 24px;
@@ -245,17 +310,29 @@ $desktop-width: 1024px;
       border-radius: 50%;
       margin: auto;
       position: relative;
+      @include tablet {
+        margin: -1px 51.6%;
+      }
 
       &_two {
         @include sprite($lm);
+        @include tablet {
+          margin: 54px 51.4% 0;
+        }
       }
 
       &_three {
         @include sprite($hw);
+        @include tablet {
+          margin: 30px 18.7% 0;
+        }
       }
 
       &_four {
         @include sprite($bh2);
+        @include tablet {
+          margin: 53px 18.2% 0;
+        }
       }
     }
 
@@ -313,15 +390,28 @@ $desktop-width: 1024px;
       display: block;
       text-align: center;
       margin-top: 17px;
+      @include tablet {
+        padding: 1px 0 0 135px;
+      }
 
       &_three {
         margin-top: 16px;
         margin-left: -7px;
+        @include tablet {
+          margin-top: 16px;
+          text-align: left;
+          padding: 0 0 0 22%;
+        }
       }
 
       &_four {
         margin-top: 14px;
         margin-left: -7px;
+        @include tablet {
+          margin-top: 14px;
+          text-align: left;
+          padding: 0 0 0 22%;
+        }
       }
     }
 
@@ -332,19 +422,32 @@ $desktop-width: 1024px;
       margin-top: 13px;
       text-align: center;
       padding: 1px 63px 0;
+      @include tablet {
+        padding: 0 15px 0 148px;
+      }
 
       &_two {
         padding: 0 52px;
+        @include tablet {
+          margin-top: 11px;
+          padding: 0 14px 0 145px;
+        }
       }
 
       &_three {
         margin-top: 14px;
         padding: 0 54px 0 46px;
+        @include tablet {
+          padding: 0 37% 0 6%;
+        }
       }
 
       &_four {
         padding: 0 53px 0 45px;
         margin-top: 14px;
+        @include tablet {
+          padding: 0 37% 0 6%;
+        }
       }
     }
   }
@@ -354,11 +457,32 @@ $desktop-width: 1024px;
   margin-top: 34px;
   height: 967px;
   background: #000;
+  @include tablet {
+    height: 1029px;
+  };
+
+  &__title {
+    @include tablet {
+      margin-top: 97px;
+      width: 45%;
+      padding: 0 27.3%;
+    };
+  }
 }
 
 .search {
   padding: 35px 0 40px;
   border-bottom: 4px solid $buttons;
+  @include tablet {
+    padding: 95px 0 99px;
+  };
+
+  &__title {
+    @include tablet {
+      width: 50%;
+      padding: 0 24.6%;
+    };
+  }
 
   &__text {
     font-size: 18px;
@@ -367,6 +491,9 @@ $desktop-width: 1024px;
     display: block;
     margin: 11px auto;
     width: 280px;
+    @include tablet {
+      margin: 31px auto 0;
+    };
   }
 
   &__field {
@@ -380,12 +507,21 @@ $desktop-width: 1024px;
     font-size: 14px;
     width: 83%;
     display: block;
+    @include tablet {
+      display: inline-block;
+      width: 29.2%;
+      margin: 37px 0 0 23%;
+    };
   }
 }
 
 .footer {
   margin-top: 16px;
   font-family: $monbold;
+  @include tablet {
+    margin-top: 16px;
+    position: relative;
+  };
 
   &__head {
     color: $buttons;
@@ -393,6 +529,10 @@ $desktop-width: 1024px;
     letter-spacing: 0.7px;
     text-align: center;
     margin: 0 3px 0 0;
+    @include tablet {
+      margin: 20px 0 0 38px;
+      display: inline-block;
+    };
   }
 
   &__text {
@@ -400,11 +540,27 @@ $desktop-width: 1024px;
     font-size: 14px;
     text-align: center;
     margin: 11px 3px 0 0;
+    @include tablet {
+      display: inline-block;
+      margin: 0 0 0 80px;
+    };
+
+    &_partners {
+      @include tablet {
+        position: absolute;
+        top: 13.9%;
+        left: 356px;
+      };
+    }
   }
 
   &__nav {
     display: block;
     margin: 1px 0 0 16%;
+    @include tablet {
+      display: block;
+      margin: 13px 0 0 254px;
+    };
   }
 
   &__items {
@@ -414,6 +570,10 @@ $desktop-width: 1024px;
     text-decoration: none;
     display: inline-block;
     padding-left: 10px;
+    @include tablet {
+      display: block;
+      margin-bottom: 7px;
+    };
   }
 
   &__design {
@@ -424,12 +584,22 @@ $desktop-width: 1024px;
     text-align: center;
     margin-top: 13px;
     letter-spacing: 1px;
+    @include tablet {
+      position: absolute;
+      top: 5.9%;
+      right: 5.1%;
+    };
   }
 
   &__logo {
     display: block;
     @include sprite($logo);
     margin: 8px auto;
+    @include tablet {
+      position: absolute;
+      top: 23.5%;
+      right: 5.4%;
+    };
   }
 }
 //

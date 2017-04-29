@@ -147,8 +147,23 @@
   border: 2px solid #ff4e50;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .promo-btn_partners {
+    margin: 35px 37% 0;
+    width: 196px;
+  }
+}
+
 .promo-btn_search {
   margin: 10px auto 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .promo-btn_search {
+    display: inline-block;
+    width: 160px;
+    margin: 37px 0 0 6px;
+  }
 }
 
 .title {
@@ -161,7 +176,7 @@
 @media (min-width: 768px) and (max-width: 1023px) {
   .title {
     width: 38%;
-    margin: 0 31.3%;
+    padding: 0 31.3%;
   }
 }
 
@@ -182,6 +197,15 @@
   width: 300px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step .steps {
+    height: 400px;
+    width: 236px;
+    display: inline-block;
+    margin-top: 33px;
+  }
+}
+
 .step .steps__item {
   display: block;
   background: #ff4e50;
@@ -197,8 +221,26 @@
   letter-spacing: 1.5px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step .steps__item {
+    margin: 213px 0 0 20px;
+  }
+}
+
 .step .steps__item_two {
   margin: 99px 0 0 20px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step .steps__item_two {
+    margin: 259px 0 0 19px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step .steps__item_three {
+    margin: 211px 0 0 21px;
+  }
 }
 
 .step .steps__title {
@@ -217,14 +259,24 @@
   font-family: "Roboto Light V1", sans-serif;
   font-size: 14px;
   display: block;
-  width: 260px;
-  margin: 12px 0 0 19px;
+  padding: 13px 6px 0 19px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step .steps__text {
+    padding: 12px 6px 0 18px;
+  }
 }
 
 .step .steps__text_two {
-  margin: 12px 0 0 19px;
   word-spacing: 0.5px;
   line-height: 16px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step .steps__text_two {
+    padding: 12px 10px 0 18px;
+  }
 }
 
 .step_one {
@@ -232,14 +284,35 @@
   margin: 14px auto 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step_one {
+    background: url("../img/step1.jpg") calc(50% - 6px) 1px no-repeat;
+    margin: 9px;
+  }
+}
+
 .step_two {
   background: url("../img/step2.m.jpg") no-repeat;
   margin: 10px auto 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step_two {
+    background: url("../img/step2.jpg") calc(50% + 4px) no-repeat;
+    margin: 8px;
+  }
+}
+
 .step_three {
   background: url("../img/step3.m.jpg") no-repeat;
   margin: 10px auto 0;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .step_three {
+    background: url("../img/step3.jpg") calc(50% - -5px) -1px no-repeat;
+    margin: 7px;
+  }
 }
 
 .partners {
@@ -250,8 +323,36 @@
   padding: 0 7px 0 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners__title {
+    width: 53%;
+    padding: 50px 23% 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .part1 {
+    display: inline-block;
+    width: 49%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .part2 {
+    display: inline-block;
+    width: 49%;
+    vertical-align: top;
+  }
+}
+
 .partners .partner {
   margin: 12px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner {
+    margin: 31px 0 0;
+  }
 }
 
 .partners .partner_two {
@@ -276,11 +377,23 @@
   position: relative;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__photo {
+    margin: -1px 51.6%;
+  }
+}
+
 .partners .partner__photo_two {
   background-image: url("../img/spriteall.png");
   background-position: -126px 0px;
   width: 124px;
   height: 124px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__photo_two {
+    margin: 54px 51.4% 0;
+  }
 }
 
 .partners .partner__photo_three {
@@ -290,11 +403,23 @@
   height: 123px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__photo_three {
+    margin: 30px 18.7% 0;
+  }
+}
+
 .partners .partner__photo_four {
   background-image: url("../img/spriteall.png");
   background-position: 0px 0px;
   width: 126px;
   height: 126px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__photo_four {
+    margin: 53px 18.2% 0;
+  }
 }
 
 .partners .partner__icon {
@@ -365,14 +490,36 @@
   margin-top: 17px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__name {
+    padding: 1px 0 0 135px;
+  }
+}
+
 .partners .partner__name_three {
   margin-top: 16px;
   margin-left: -7px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__name_three {
+    margin-top: 16px;
+    text-align: left;
+    padding: 0 0 0 22%;
+  }
+}
+
 .partners .partner__name_four {
   margin-top: 14px;
   margin-left: -7px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__name_four {
+    margin-top: 14px;
+    text-align: left;
+    padding: 0 0 0 22%;
+  }
 }
 
 .partners .partner__text {
@@ -384,8 +531,21 @@
   padding: 1px 63px 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__text {
+    padding: 0 15px 0 148px;
+  }
+}
+
 .partners .partner__text_two {
   padding: 0 52px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__text_two {
+    margin-top: 11px;
+    padding: 0 14px 0 145px;
+  }
 }
 
 .partners .partner__text_three {
@@ -393,9 +553,21 @@
   padding: 0 54px 0 46px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__text_three {
+    padding: 0 37% 0 6%;
+  }
+}
+
 .partners .partner__text_four {
   padding: 0 53px 0 45px;
   margin-top: 14px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .partners .partner__text_four {
+    padding: 0 37% 0 6%;
+  }
 }
 
 .ideas {
@@ -404,9 +576,36 @@
   background: #000;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ideas {
+    height: 1029px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .ideas__title {
+    margin-top: 97px;
+    width: 45%;
+    padding: 0 27.3%;
+  }
+}
+
 .search {
   padding: 35px 0 40px;
   border-bottom: 4px solid #ff4e50;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .search {
+    padding: 95px 0 99px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .search__title {
+    width: 50%;
+    padding: 0 24.6%;
+  }
 }
 
 .search__text {
@@ -416,6 +615,12 @@
   display: block;
   margin: 11px auto;
   width: 280px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .search__text {
+    margin: 31px auto 0;
+  }
 }
 
 .search__field {
@@ -431,9 +636,24 @@
   display: block;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .search__field {
+    display: inline-block;
+    width: 29.2%;
+    margin: 37px 0 0 23%;
+  }
+}
+
 .footer {
   margin-top: 16px;
   font-family: "Montserrat-Bold", sans-serif;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer {
+    margin-top: 16px;
+    position: relative;
+  }
 }
 
 .footer__head {
@@ -444,6 +664,13 @@
   margin: 0 3px 0 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__head {
+    margin: 20px 0 0 38px;
+    display: inline-block;
+  }
+}
+
 .footer__text {
   color: #333;
   font-size: 14px;
@@ -451,9 +678,31 @@
   margin: 11px 3px 0 0;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__text {
+    display: inline-block;
+    margin: 0 0 0 80px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__text_partners {
+    position: absolute;
+    top: 13.9%;
+    left: 356px;
+  }
+}
+
 .footer__nav {
   display: block;
   margin: 1px 0 0 16%;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__nav {
+    display: block;
+    margin: 13px 0 0 254px;
+  }
 }
 
 .footer__items {
@@ -463,6 +712,13 @@
   text-decoration: none;
   display: inline-block;
   padding-left: 10px;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__items {
+    display: block;
+    margin-bottom: 7px;
+  }
 }
 
 .footer__design {
@@ -475,6 +731,14 @@
   letter-spacing: 1px;
 }
 
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__design {
+    position: absolute;
+    top: 5.9%;
+    right: 5.1%;
+  }
+}
+
 .footer__logo {
   display: block;
   background-image: url("../img/spriteall.png");
@@ -482,4 +746,12 @@
   width: 110px;
   height: 24px;
   margin: 8px auto;
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer__logo {
+    position: absolute;
+    top: 23.5%;
+    right: 5.4%;
+  }
 }
