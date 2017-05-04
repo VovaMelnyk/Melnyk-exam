@@ -534,11 +534,7 @@ $desktop-width: 1024px;
 
 .ideas {
   margin-top: 34px;
-  height: 967px;
-  background: #000;
-  @include tablet {
-    height: 1029px;
-  };
+  @include tablet {}
 
   &__title {
     @include tablet {
@@ -547,13 +543,86 @@ $desktop-width: 1024px;
       padding: 0 27.3%;
     };
   }
+
+  .holiday {
+    width: 300px;
+    margin: auto;
+    @include tablet {
+      width: 748px;
+      margin-top: 32px;
+    }
+    @include desktop {
+      width: 940px;
+    }
+
+    &__item {
+      margin-bottom: 10px;
+      @include tablet {
+        margin-bottom: 15px;
+      }
+      @include desktop {
+        margin-bottom: 16px;
+      }
+    }
+
+    &__picture {
+      width: 300px;
+      height: 121px;
+      border-radius: 4px;
+      @include tablet {
+        width: 236px;
+        height: 311px;
+      }
+      @include desktop {
+        width: 300px;
+        height: 310px;
+      }
+
+      &_wide {
+        width: 300px;
+        height: 121px;
+        border-radius: 4px;
+        @include tablet {
+          width: 492px;
+          height: 311px;
+        }
+        @include desktop {
+          width: 620px;
+          height: 310px;
+        }
+      }
+    }
+
+    &__box {
+      color: $text;
+      font-family: $monbold;
+      font-size: 22px;
+      text-align: center;
+      vertical-align: middle;
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    &__text {
+      width: 90%;
+      margin: 42px 5%;
+      max-height: 68%;
+      display: block;
+      @include tablet {
+        margin: 140px 5%;
+      }
+    }
+  }
 }
 
 .search {
-  padding: 35px 0 40px;
+  padding: 3px 0 40px;
   border-bottom: 4px solid $buttons;
   @include tablet {
-    padding: 95px 0 99px;
+    padding: 75px 0 99px;
   };
 
   &__title {
@@ -587,6 +656,7 @@ $desktop-width: 1024px;
     font-family: $robot;
     color: #999;
     font-size: 14px;
+    outline: none;
     width: 83%;
     display: block;
     @include tablet {

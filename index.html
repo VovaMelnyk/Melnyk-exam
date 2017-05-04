@@ -41,46 +41,62 @@
   <div class="partners">
     <h3 class="title partners__title">Meet a partner for your best holiday</h3>
     <div class="partner partner_one">
-        <div class="partner__photo">
-          <div class="partner__icon">
-            <div class="partner__img partner__img_one"></div>
-          </div>
+      <div class="partner__photo">
+        <div class="partner__icon">
+          <div class="partner__img partner__img_one"></div>
         </div>
-        <p class="partner__name">Bradley Hunter</p>
-        <p class="partner__text">Based in Chicago. I love playing tennis and loud music.</p>
       </div>
-      <div class="partner partner_two">
-        <div class="partner__photo partner__photo_two">
-          <div class="partner__icon partner__icon_two">
-            <div class="partner__img partner__img_two"></div>
-          </div>
+      <p class="partner__name">Bradley Hunter</p>
+      <p class="partner__text">Based in Chicago. I love playing tennis and loud music.</p>
+    </div>
+    <div class="partner partner_two">
+      <div class="partner__photo partner__photo_two">
+        <div class="partner__icon partner__icon_two">
+          <div class="partner__img partner__img_two"></div>
         </div>
-        <p class="partner__name">Lucas Marsha</p>
-        <p class="partner__text partner__text_two">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
       </div>
-        <div class="partner partner_three">
-        <div class="partner__photo partner__photo_three">
-          <div class="partner__icon partner__icon_three">
-            <div class="partner__img partner__img_three"></div>
-          </div>
+      <p class="partner__name">Lucas Marsha</p>
+      <p class="partner__text partner__text_two">I get my inspiration from nature and objects around me. I have a passion to colours, typography and skateboards.</p>
+    </div>
+    <div class="partner partner_three">
+      <div class="partner__photo partner__photo_three">
+        <div class="partner__icon partner__icon_three">
+          <div class="partner__img partner__img_three"></div>
         </div>
-        <p class="partner__name partner__name_three">Heather Walker</p>
-        <p class="partner__text partner__text_three">I'm a happy person that loves cats and climbing on mountains.</p>
       </div>
-      <div class="partner partner_four">
-        <div class="partner__photo partner__photo_four">
-          <div class="partner__icon partner__icon_four">
-            <div class="partner__img partner__img_four"></div>
-          </div>
+      <p class="partner__name partner__name_three">Heather Walker</p>
+      <p class="partner__text partner__text_three">I'm a happy person that loves cats and climbing on mountains.</p>
+    </div>
+    <div class="partner partner_four">
+      <div class="partner__photo partner__photo_four">
+        <div class="partner__icon partner__icon_four">
+          <div class="partner__img partner__img_four"></div>
         </div>
-        <p class="partner__name partner__name_four">Bradley Hunter</p>
-        <p class="partner__text partner__text_four">Based in Chicago. I love playing tennis and loud music.</p>
       </div>
+      <p class="partner__name partner__name_four">Bradley Hunter</p>
+      <p class="partner__text partner__text_four">Based in Chicago. I love playing tennis and loud music.</p>
+    </div>
     <button type="button" name="promo" class="promo-btn promo-btn_partners">See other partners</button>
   </div>
   <div class="ideas">
     <h3 class="title ideas__title">Discover holiday activity
 ideas</h3>
+    <div class="holiday"></div>
+    <script type="text/lodash" id='code'>
+    <% for(var i = 0; i < list.hits.length; i++) { %>
+      <% if (i==4 || i==5) {%>
+        <div class="holiday__item">
+          <img src=<%=list.hits[i].webformatURL%> alt="" class='holiday__picture_wide'>
+          <%} else { %>
+            <div class="holiday__item">
+              <img src=<%=list.hits[i].webformatURL%> alt="" class='holiday__picture'>
+              <% }%>
+                <div class="holiday__box">
+                  <span class="holiday__text"><%=list.hits[i].tags%></span>
+                </div>
+            </div>
+            <% } %>
+  </script>
   </div>
   <div class="search">
     <h3 class="title search__title">Discover holiday activity
@@ -102,6 +118,9 @@ ideas</h3>
     <p class="footer__design">Designed by</p>
     <a href="#" class="footer__logo"></a>
   </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+  <script src='src/js/masonry.pkgd.min.js'></script>
+  <script src="src/js/script.js"></script>
 </body>
 
 </html>
