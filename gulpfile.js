@@ -68,7 +68,7 @@ gulp.task('watch',['sass','processingcss','sprite','imagemin'], function() {
   gulp.watch('src/sass/*.scss', ['sass']);
   gulp.watch('src/css/*css', ['processingcss']);
   gulp.watch('src/img/sprites/*.+(png|jpg)', ['sprite']);
-  gulp.watch('src/js/*.js', ['processingjs']);
+  // gulp.watch('src/js/*.js', ['processingjs']);
   gulp.watch('src/img/*.+(png|jpg)', ['imagemin']);
   gulp.watch('./*html', reload);
 

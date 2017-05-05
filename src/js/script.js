@@ -1,3 +1,9 @@
+slidr.create('slidr-one').start();
+slidr.create('slidr-two').start();
+slidr.create('slidr-three').start();
+
+
+
 var ideaRequest = new XMLHttpRequest();
 
 function randomPage() {
@@ -31,14 +37,16 @@ function load() {
   ideaRequest.onload = function() {
     if (ideaRequest.readyState == 4) {
       convert();
-      var width = document.querySelector('.holiday__picture').width;
-      console.log(width);
       var container = document.querySelector('.holiday');
+      var size = document.querySelector('.holiday__picture').width;
+      console.log(size);
       var msnry = new Masonry(container, {
         // Настройки
-        columnWidth: width,
+        columnWidth: '.holiday__sizer',
         itemSelector: '.holiday__item',
-        gutter: 20
+        gutter: 20,
+
+
       });
       console.log('ok');
     } else {

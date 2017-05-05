@@ -22,20 +22,56 @@
   </div>
   <div class="step">
     <h3 class="title">How Urlaubsglück works?</h3>
-    <div class="steps step_one">
-      <span class="steps__item">Step 1</span>
-      <h3 class="steps__title">Sed leo enim, condimentum</h3>
-      <p class="steps__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+    <div id='slidr-one' class="one">
+      <div class="steps step_one" data-slidr="one">
+        <span class="steps__item">Step 1</span>
+        <h3 class="steps__title">Sed leo enim, condimentum</h3>
+        <p class="steps__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
+      <div class="steps step_two" data-slidr="two">
+        <span class="steps__item steps__item_two ">Step 2</span>
+        <h3 class="steps__title steps__title_two">Morbi velit risus</h3>
+        <p class="steps__text steps__text_two">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+      </div>
+      <div class="steps step_three" data-slidr="tree">
+        <span class="steps__item steps__item_three">Step 3</span>
+        <h3 class="steps__title steps__title_three">Sed leo enim, condimentum</h3>
+        <p class="steps__text steps__text_three">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
     </div>
-    <div class="steps step_two">
-      <span class="steps__item steps__item_two ">Step 2</span>
-      <h3 class="steps__title steps__title_two">Morbi velit risus</h3>
-      <p class="steps__text steps__text_two">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+    <div id='slidr-two' class="two">
+      <div class="steps step_two"data-slidr="one">
+        <span class="steps__item steps__item_two ">Step 2</span>
+        <h3 class="steps__title steps__title_two">Morbi velit risus</h3>
+        <p class="steps__text steps__text_two">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+      </div>
+      <div class="steps step_three" data-slidr="two">
+        <span class="steps__item steps__item_three">Step 3</span>
+        <h3 class="steps__title steps__title_three">Sed leo enim, condimentum</h3>
+        <p class="steps__text steps__text_three">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
+      <div class="steps step_one" data-slidr="three">
+        <span class="steps__item">Step 1</span>
+        <h3 class="steps__title">Sed leo enim, condimentum</h3>
+        <p class="steps__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
     </div>
-    <div class="steps step_three">
-      <span class="steps__item steps__item_three">Step 3</span>
-      <h3 class="steps__title steps__title_three">Sed leo enim, condimentum</h3>
-      <p class="steps__text steps__text_three">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+    <div id='slidr-three' class="three">
+      <div class="steps step_three" data-slidr="one">
+        <span class="steps__item steps__item_three">Step 3</span>
+        <h3 class="steps__title steps__title_three">Sed leo enim, condimentum</h3>
+        <p class="steps__text steps__text_three">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
+      <div class="steps step_one" data-slidr="two">
+        <span class="steps__item">Step 1</span>
+        <h3 class="steps__title">Sed leo enim, condimentum</h3>
+        <p class="steps__text">Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet facilisis.</p>
+      </div>
+      <div class="steps step_two" data-slidr="three">
+        <span class="steps__item steps__item_two ">Step 2</span>
+        <h3 class="steps__title steps__title_two">Morbi velit risus</h3>
+        <p class="steps__text steps__text_two">Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.</p>
+      </div>
     </div>
   </div>
   <div class="partners">
@@ -83,44 +119,46 @@
 ideas</h3>
     <div class="holiday"></div>
     <script type="text/lodash" id='code'>
-    <% for(var i = 0; i < list.hits.length; i++) { %>
-      <% if (i==4 || i==5) {%>
-        <div class="holiday__item">
-          <img src=<%=list.hits[i].webformatURL%> alt="" class='holiday__picture_wide'>
-          <%} else { %>
-            <div class="holiday__item">
-              <img src=<%=list.hits[i].webformatURL%> alt="" class='holiday__picture'>
-              <% }%>
-                <div class="holiday__box">
-                  <span class="holiday__text"><%=list.hits[i].tags%></span>
-                </div>
-            </div>
-            <% } %>
-  </script>
-  </div>
-  <div class="search">
-    <h3 class="title search__title">Discover holiday activity
+      <div class="holiday__sizer"></div>
+      <% for(var i = 0; i < list.hits.length; i++) { %>
+        <% if (i==4 || i==5) {%>
+          <div class="holiday__item">
+            <img src=<%=list.hits[i].webformatURL%> alt="" class='holiday__picture_wide'>
+            <%} else { %>
+              <div class="holiday__item">
+                <img src=<%=list.hits[i].webformatURL%> alt="" class='holiday__picture'>
+                <% }%>
+                  <div class="holiday__box">
+                    <span class="holiday__text"><%=list.hits[i].tags%></span>
+                  </div>
+              </div>
+              <% } %>
+    </script>
+    </div>
+    <div class="search">
+      <h3 class="title search__title">Discover holiday activity
 ideas</h3>
-    <p class="search__text">Hi! What are your holiday interests?</p>
-    <input type="text" name="search" value="" class="search__field" placeholder="Enter your interests">
-    <button type="button" name="promo" class="promo-btn promo-btn_search">Search partners</button>
-  </div>
-  <footer class="footer">
-    <h4 class="footer__head">Urlaubsglück</h4>
-    <p class="footer__text">Company</p>
-    <nav class="footer__nav">
-      <a href="#" class="footer__items">About</a>
-      <a href="#" class="footer__items">Contacts</a>
-      <a href="#" class="footer__items">Press</a>
-      <a href="#" class="footer__items">Blog</a>
-    </nav>
-    <p class="footer__text footer__text_partners ">Partners</p>
-    <p class="footer__design">Designed by</p>
-    <a href="#" class="footer__logo"></a>
-  </footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
-  <script src='src/js/masonry.pkgd.min.js'></script>
-  <script src="src/js/script.js"></script>
+      <p class="search__text">Hi! What are your holiday interests?</p>
+      <input type="text" name="search" value="" class="search__field" placeholder="Enter your interests">
+      <button type="button" name="promo" class="promo-btn promo-btn_search">Search partners</button>
+    </div>
+    <footer class="footer">
+      <h4 class="footer__head">Urlaubsglück</h4>
+      <p class="footer__text">Company</p>
+      <nav class="footer__nav">
+        <a href="#" class="footer__items">About</a>
+        <a href="#" class="footer__items">Contacts</a>
+        <a href="#" class="footer__items">Press</a>
+        <a href="#" class="footer__items">Blog</a>
+      </nav>
+      <p class="footer__text footer__text_partners ">Partners</p>
+      <p class="footer__design">Designed by</p>
+      <a href="#" class="footer__logo"></a>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.2.0/lodash.js"></script>
+    <script src='src/js/masonry.pkgd.min.js'></script>
+    <script src="src/js/slidr.js"></script>
+    <script src="src/js/script.js"></script>
 </body>
 
 </html>
