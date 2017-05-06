@@ -19,11 +19,11 @@ $desktop-width: 1024px;
     @content;
   }
 }
-@mixin ie {
-   @if $old-ie{
-    @content;
-  }
-}
+// @mixin ie {
+//    @if $old-ie{
+//     @content;
+//   }
+// }
 
 * {
   margin: 0;
@@ -46,10 +46,7 @@ $desktop-width: 1024px;
   @include desktop {
     background-position: top;
   }
-  @include ie {
-    height: 700px;
-    background-position: top;
-  }
+
 
   .header {
     padding: 20px 0 0;
@@ -64,10 +61,7 @@ $desktop-width: 1024px;
       padding: 38px 0 0;
       margin: 0 0 0 72%;
     }
-    @include ie {
-      padding: 38px 0 0;
-      margin: 0 0 0 72%;
-    }
+
 
     &__link {
       display: inline-block;
@@ -97,9 +91,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: -28px 53.1% 0 0;
     }
-    @include ie {
-      margin: -28px 53.1% 0 0;
-    }
+
   }
 
   &__title {
@@ -117,12 +109,6 @@ $desktop-width: 1024px;
       margin: 143px auto 0;
       width: 38%;
     }
-    @include ie {
-      font-size: 52px;
-      display: block;
-      margin: 143px auto 0;
-      width: 38%;
-    }
   }
 
   &__par {
@@ -132,10 +118,6 @@ $desktop-width: 1024px;
     margin-top: 8px;
     padding: 0 45px 0 43px;
     @include tablet {
-      font-size: 24px;
-      margin-top: 24px;
-    }
-    @include ie {
       font-size: 24px;
       margin-top: 24px;
     }
@@ -162,10 +144,7 @@ $desktop-width: 1024px;
     width: 15.6%;
     margin: 34px 42.2% 0;
   }
-  @include ie {
-    width: 15.6%;
-    margin: 34px 42.2% 0;
-  }
+
 
   &_partners {
     margin: 25px auto 0;
@@ -180,11 +159,7 @@ $desktop-width: 1024px;
       margin: 68px 39.6% 0;
       width: 196px;
     }
-    @include ie {
-      margin: 68px 39.6% 0;
-      width: 196px;
-      behavior: url("border-radius.htc");
-    }
+
   }
 
   &_search {
@@ -196,12 +171,6 @@ $desktop-width: 1024px;
     }
     @include desktop {
       margin: 39px 0 0 6px;
-    }
-    @include ie {
-      margin: 39px 0 0 6px;
-      display: inline-block;
-      width: 160px;
-      behavior: url("border-radius.htc");
     }
   }
 }
@@ -231,12 +200,9 @@ $desktop-width: 1024px;
     margin: 94px auto 0;
     width: 940px;
   }
-  @include ie {
-    margin: 94px auto 0;
-    width: 940px;
-  }
 
-  .one {
+
+    .one {
     height: 246px;
     margin: 15px auto 0;
     display: inline-block;
@@ -247,10 +213,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: 15px 0 0;
     }
-    @include ie {
-      height: 434px;
-      margin: 15px 0 0;
-    }
+
   }
 
   .two {
@@ -264,10 +227,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: 15px 0 0 -5px;
     }
-    @include ie {
-      height: 434px;
-      margin: 15px 0 0 -5px;
-    }
+
   }
 
   .three {
@@ -281,10 +241,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: 15px 0 0 4px;
     }
-    @include ie {
-      height: 434px;
-      margin: 15px 0 0 -3px;
-    }
+
   }
 
   [id*="-control"] .slidr-control:after {
@@ -304,10 +261,7 @@ $desktop-width: 1024px;
       top: 39.3% !important;
       right: 22px !important;
     }
-    @include ie {
-      top: 39.3% !important;
-      right: 22px !important;
-    }
+
   }
 
   [id*="-control"] .slidr-control.left {
@@ -323,10 +277,7 @@ $desktop-width: 1024px;
       top: 39.3% !important;
       left: 31px !important;
     }
-    @include ie {
-      top: 39.3% !important;
-      left: 31px !important;
-    }
+
   }
 
   .steps {
@@ -344,10 +295,7 @@ $desktop-width: 1024px;
       width: 311px;
       height: 402px;
     }
-    @include ie {
-      width: 311px;
-      height: 402px;
-    }
+
 
     &__item {
       display: block;
@@ -369,9 +317,6 @@ $desktop-width: 1024px;
         margin: 230px 0 0 21px;
       }
 
-      @include ie {
-        margin: 230px 0 0 21px;
-      }
 
       &_two {
         margin: 99px 0 0 20px;
@@ -381,9 +326,7 @@ $desktop-width: 1024px;
         @include desktop {
           margin: 260px 0 0 30px;
         }
-        @include ie {
-          margin: 260px 0 0 30px;
-        }
+
       }
 
       &_three {
@@ -393,9 +336,7 @@ $desktop-width: 1024px;
         @include desktop {
           margin: 230px 0 0 32px;
         }
-        @include ie {
-          margin: 230px 0 0 32px;
-        }
+
       }
     }
 
@@ -410,16 +351,10 @@ $desktop-width: 1024px;
         @include desktop {
           margin: 15px 0 0 28px;
         }
-        @include ie {
-          margin: 15px 0 0 28px;
-        }
       }
 
       &_three {
         @include desktop {
-          margin: 15px 0 0 30px;
-        }
-        @include ie {
           margin: 15px 0 0 30px;
         }
       }
@@ -438,10 +373,7 @@ $desktop-width: 1024px;
         padding: 12px 0 0 20px;
         width: 260px;
       }
-      @include ie {
-        padding: 12px 0 0 20px;
-        width: 260px;
-      }
+
 
       &_two {
         word-spacing: 0.5px;
@@ -452,16 +384,11 @@ $desktop-width: 1024px;
         @include desktop {
           padding: 13px 0 0 29px;
         }
-        @include ie {
-          padding: 13px 0 0 29px;
-        }
+
       }
 
       &_three {
         @include desktop {
-          padding: 13px 0 0 30px;
-        }
-        @include ie {
           padding: 13px 0 0 30px;
         }
       }
@@ -473,9 +400,7 @@ $desktop-width: 1024px;
     @include tablet {
       background: url("../img/step1.jpg") calc(50% - 6px) 1px no-repeat;
     }
-    @include ie {
-      background: url("../img/step1.jpg") no-repeat;
-    }
+
   }
 
   &_two {
@@ -483,9 +408,7 @@ $desktop-width: 1024px;
     @include tablet {
       background: url("../img/step2.jpg") calc(50% + 4px) no-repeat;
     }
-    @include ie {
-      background: url("../img/step2.jpg") no-repeat;
-    }
+
   }
 
   &_three {
@@ -493,9 +416,7 @@ $desktop-width: 1024px;
     @include tablet {
       background: url("../img/step3.jpg") calc(50% - -5px) -1px no-repeat;
     }
-    @include ie {
-      background: url("../img/step3.jpg") no-repeat;
-    }
+
   }
 }
 
@@ -507,10 +428,7 @@ $desktop-width: 1024px;
   }
   @include desktop {
     width: 940px;
-  }
-  @include ie {
-    width: 940px;
-    margin: 27px auto 0;
+    margin: 20px auto 0;
   }
 
 
@@ -524,16 +442,12 @@ $desktop-width: 1024px;
       width: 54%;
       padding: 56px 22.9% 0;
     }
-    @include ie {
-      width: 54%;
-      padding: 56px 22.9% 0;
-    }
+
   }
 
   .partner {
     margin: 13px auto 0;
     width: 219px;
-
 
     &_one {
       @include tablet {
@@ -542,9 +456,7 @@ $desktop-width: 1024px;
       @include desktop {
         margin: 31px 2px 0;
       }
-      @include ie {
-        margin: 31px 2px 0;
-      }
+
     }
 
     &_two {
@@ -555,9 +467,7 @@ $desktop-width: 1024px;
       @include desktop {
         margin: -205px 482px 0;
       }
-      @include ie {
-        margin: -205px 482px 0;
-      }
+
     }
 
     &_three {
@@ -568,9 +478,7 @@ $desktop-width: 1024px;
       @include desktop {
         margin: -240px 244px 0;
       }
-      @include ie {
-        margin: -240px 244px 0;
-      }
+
     }
 
     &_four {
@@ -581,9 +489,7 @@ $desktop-width: 1024px;
       @include desktop {
         margin: -205px 724px 0;
       }
-      @include ie {
-        margin: -205px 724px 0;
-      }
+
     }
 
     &__photo {
@@ -591,15 +497,11 @@ $desktop-width: 1024px;
       border-radius: 60%;
       margin-left: 47px;
       position: relative;
-      @include ie {
-        behavior: url("border-radius.htc");
-      }
 
 
       &_two {
         @include sprite($lm);
         margin-left: 46px;
-
       }
 
       &_three {
@@ -623,9 +525,7 @@ $desktop-width: 1024px;
       right: -3.5%;
       border: 5px solid #ffffff;
       box-sizing: border-box;
-      @include ie {
-        behavior: url("border-radius.htc");
-      }
+
 
       &_two {
         background: #ffa507;
@@ -656,7 +556,6 @@ $desktop-width: 1024px;
       &_two {
         @include sprite($flask);
         left: 26%;
-
       }
 
       &_three {
@@ -679,17 +578,14 @@ $desktop-width: 1024px;
       text-align: center;
       margin-top: 17px;
 
-
       &_three {
         margin-top: 16px;
         margin-left: -7px;
-
       }
 
       &_four {
         margin-top: 14px;
         margin-left: -7px;
-
       }
     }
 
@@ -701,19 +597,16 @@ $desktop-width: 1024px;
       text-align: center;
       letter-spacing: 0.1px;
 
-
       &_two {
         @include tablet {}
       }
 
       &_three {
         margin: 14px 0 0 -9px;
-
       }
 
       &_four {
         margin: 14px 0 0 -7px;
-
       }
     }
   }
@@ -722,18 +615,13 @@ $desktop-width: 1024px;
 .ideas {
   margin-top: 34px;
 
-
   &__title {
     @include tablet {
       margin-top: 97px;
       width: 45%;
       padding: 0 27.3%;
     }
-    @include ie {
-      margin-top: 97px;
-      width: 45%;
-      padding: 0 27.3%;
-    }
+
   }
 
   .holiday {
@@ -746,10 +634,7 @@ $desktop-width: 1024px;
     @include desktop {
       width: 940px;
     }
-    @include ie {
-      margin-top: 32px;
-      width: 940px;
-    }
+
 
     &__item {
       margin-bottom: 10px;
@@ -759,9 +644,7 @@ $desktop-width: 1024px;
       @include desktop {
         margin-bottom: 16px;
       }
-      @include ie {
-        margin-bottom: 16px;
-      }
+
     }
 
     &__sizer {
@@ -786,10 +669,7 @@ $desktop-width: 1024px;
         width: 300px;
         height: 310px;
       }
-      @include ie {
-        width: 300px;
-        height: 310px;
-      }
+
 
       &_wide {
         width: 300px;
@@ -803,10 +683,7 @@ $desktop-width: 1024px;
           width: 620px;
           height: 310px;
         }
-        @include ie {
-          width: 620px;
-          height: 310px;
-        }
+
       }
     }
 
@@ -831,9 +708,7 @@ $desktop-width: 1024px;
       @include tablet {
         margin: 140px 5%;
       }
-      @include ie {
-        margin: 140px 5%;
-      }
+
     }
   }
 }
@@ -844,9 +719,7 @@ $desktop-width: 1024px;
   @include tablet {
     padding: 75px 0 99px;
   }
-  @include ie {
-    padding: 75px 0 99px;
-  }
+
 
   &__title {
     @include tablet {
@@ -856,10 +729,7 @@ $desktop-width: 1024px;
     @include desktop {
       width: 50.6%;
     }
-    @include ie {
-      padding: 0 24.6%;
-      width: 50.6%;
-    }
+
   }
 
   &__text {
@@ -872,9 +742,7 @@ $desktop-width: 1024px;
     @include tablet {
       margin: 31px auto 0;
     }
-    @include ie {
-      margin: 31px auto 0;
-    }
+
   }
 
   &__field {
@@ -890,6 +758,7 @@ $desktop-width: 1024px;
     width: 83%;
     display: block;
     @include tablet {
+      font-size: 14px;
       display: inline-block;
       width: 29.2%;
       margin: 37px 0 0 23%;
@@ -897,12 +766,9 @@ $desktop-width: 1024px;
     @include desktop {
       width: 15.6%;
       margin: 39px 0 0 35.7%;
+      font-size: 14px;
     }
-    @include ie {
-      display: inline-block;
-      width: 15.6%;
-      margin: 39px 0 0 35.7%;
-    }
+
   }
 }
 
@@ -913,10 +779,7 @@ $desktop-width: 1024px;
     margin-top: 16px;
     position: relative;
   }
-  @include ie {
 
-    position: relative;
-  }
 
   &__head {
     color: $buttons;
@@ -931,10 +794,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: 20px 0 0 249px;
     }
-    @include ie {
-      margin: 20px 0 0 249px;
-      display: inline-block;
-    }
+
   }
 
   &__text {
@@ -949,10 +809,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: 0 0 0 94px;
     }
-    @include ie {
-      margin: 0 0 0 94px;
-      display: inline-block;
-    }
+
 
     &_partners {
       @include tablet {
@@ -963,11 +820,7 @@ $desktop-width: 1024px;
       @include desktop {
         left: 556px;
       }
-      @include ie {
-        position: absolute;
-        top: 13.9%;
-        left: 556px;
-      }
+
     }
   }
 
@@ -981,9 +834,7 @@ $desktop-width: 1024px;
     @include desktop {
       margin: 13px 0 0 481px;
     }
-    @include ie {
-      margin: 13px 0 0 481px;
-    }
+
   }
 
   &__items {
@@ -997,10 +848,7 @@ $desktop-width: 1024px;
       display: block;
       margin-bottom: 7px;
     }
-    @include ie {
-      display: block;
-      margin-bottom: 7px;
-    }
+
   }
 
   &__design {
@@ -1019,11 +867,7 @@ $desktop-width: 1024px;
     @include desktop {
       right: 17.3%;
     }
-    @include ie {
-      position: absolute;
-      top: 5.9%;
-      right: 17.3%;
-    }
+
   }
 
   &__logo {
@@ -1038,10 +882,6 @@ $desktop-width: 1024px;
     @include desktop {
       right: 17.3%;
     }
-    @include ie {
-      position: absolute;
-      top: 23.5%;
-      right: 17.3%;
-    }
+
   }
 }

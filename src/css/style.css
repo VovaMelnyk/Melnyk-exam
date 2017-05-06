@@ -543,6 +543,7 @@
 @media (min-width: 1024px) {
   .partners {
     width: 940px;
+    margin: 20px auto 0;
   }
 }
 
@@ -634,7 +635,7 @@
   background-position: -123px -126px;
   width: 122px;
   height: 122px;
-  border-radius: 50%;
+  border-radius: 60%;
   margin-left: 47px;
   position: relative;
 }
@@ -948,6 +949,7 @@
 
 @media (min-width: 768px) {
   .search__field {
+    font-size: 14px;
     display: inline-block;
     width: 29.2%;
     margin: 37px 0 0 23%;
@@ -958,6 +960,7 @@
   .search__field {
     width: 15.6%;
     margin: 39px 0 0 35.7%;
+    font-size: 14px;
   }
 }
 
