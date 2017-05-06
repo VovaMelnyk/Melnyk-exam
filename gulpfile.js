@@ -17,6 +17,13 @@ gulp.task('sass', function() {
     .pipe(reload({stream: true}));
 });
 
+gulp.task('ie', function() {
+  return gulp.src('src/sass/ie.scss')
+    .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
+    .pipe(gulp.dest('src/css/'))
+    .pipe(reload({stream: true}));
+});
+
 gulp.task('processingcss', function() {
   return gulp.src('src/css/style.css')
     .pipe(concatcss('main.min.css'))
@@ -64,8 +71,9 @@ gulp.task('browser-sync', function() {
 });
 
 
-gulp.task('watch',['sass','processingcss','sprite','imagemin'], function() {
+gulp.task('watch',['sass','ie','processingcss','sprite','imagemin'], function() {
   gulp.watch('src/sass/*.scss', ['sass']);
+  gulp.watch('src/sass/*.scss', ['ie']);
   gulp.watch('src/css/*css', ['processingcss']);
   gulp.watch('src/img/sprites/*.+(png|jpg)', ['sprite']);
   // gulp.watch('src/js/*.js', ['processingjs']);
